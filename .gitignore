@@ -1,0 +1,24 @@
+.DS_Store
+/release/
+/debug/
+/dist/
+/build/
+/coverage/
+
+
+node_modules
+build
+.nyc_output
+
+# configurations
+.flh.config.js
+.grs.config.js
+
+# package manager
+npm-debug.log
+package-lock.json
+yarn.lock
+yarn-error.log
+.yarnrc
+.pnpm-debug.log
+pnpm-lock.yaml

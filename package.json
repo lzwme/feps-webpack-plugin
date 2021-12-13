@@ -1,0 +1,38 @@
+{
+  "name": "@lzwme/feps-webpack-plugin",
+  "version": "1.0.0",
+  "description": "This plug-in is used for function execution performance statistics. It calculates the execution time by injecting statistical code and finds slow functions.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "node examples/webpack5-example/webpack.config.js --run --watch",
+    "version": "standard-version",
+    "prepare-release": "npm run version",
+    "release": "npm run prepare-release && npm publish --access=public --registry=https://registry.npmjs.org && git push",
+    "test": "node examples/webpack5-example/webpack.config.js --run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzwme/feps-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "function",
+    "time-consuming",
+    "performance",
+    "statistics",
+    "benchmark"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lzwme/feps-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/lzwme/feps-webpack-plugin#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0"
+  }
+}
