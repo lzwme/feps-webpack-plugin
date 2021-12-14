@@ -9,6 +9,7 @@
 node_modules
 build
 .nyc_output
+.cache
 
 # configurations
 .flh.config.js

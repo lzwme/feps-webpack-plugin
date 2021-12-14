@@ -1,7 +1,8 @@
 const path = require('path');
+const fs = require('fs');
+const argv = require('yargs').argv;
 const webpack = require('webpack');
 const FEPSPlugin = require('../../lib');
-const argv = process.argv.slice(2);
 
 /** @type {webpack.Configuration} */
 const config = {
@@ -26,7 +27,7 @@ const config = {
       exclude: ['node_modules', /\.ignore\./],
     }),
   ],
-  cache: { type: 'memory' },
+  cache: argv.cache ? { type: 'filesystem', cacheLocation: path.resolve(__dirname, '.cache') } : { type: 'memory' },
   stats: true,
   devtool: 'cheap-module-source-map',
 };
@@ -44,11 +45,20 @@ const run = () => {
     if (stats.hasWarnings()) console.log('hasWarnings:', stats.toJson().warnings);
   };
 
-  if (argv.includes('--watch')) {
+  if (argv.watch) {
     webpack(config).watch({ ignored: ['node_modules'] }, callback);
   } else {
     webpack(config).run(callback);
   }
 }
 
-if (argv.includes('--run')) run();
+if (argv.reset) {
+  ['.cache', 'dist'].forEach(p => {
+    p = path.resolve(__dirname, p);
+    if (fs.existsSync(p)) {
+      fs.rmSync(p, { recursive: true });
+      console.log('removed:', p);
+    }
+  });
+}
+if (argv.run) run();

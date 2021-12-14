@@ -77,7 +77,13 @@ module.exports = {
 ```bash
 git clone https://github.com/lzwme/feps-webpack-plugin.git
 pnpm install
+
+# start for examples/webpack5-example
 pnpm run dev
+# enable cache by filesystem
+pnpm run dev --cache
+# first delete the dist and cache directories
+pnpm run dev --reset
 ```
 
 ## License
