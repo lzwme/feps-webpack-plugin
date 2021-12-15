@@ -26,7 +26,14 @@
     "statistics",
     "benchmark"
   ],
-  "author": "",
+  "author": {
+    "name": "renxia",
+    "email": "lzwy0820@qq.com",
+    "url": "https://lzw.me"
+  },
+  "engines": {
+    "node": ">=12"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lzwme/feps-webpack-plugin/issues"
