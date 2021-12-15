@@ -43,6 +43,7 @@ module.exports = {
       logger: 'console.warn', // 'globalThis.logger.report',
       include: [/\.(tsx?|jsx?)$/],
       exclude: ['node_modules', /\.ignore\./],
+      excludeNodeType: [],
     }),
   ],
 };
@@ -60,6 +61,7 @@ module.exports = {
 | `timeLimit` | `{Number}` | `50`             | 慢函数执行耗时阈值。<br>执行时间大于该值则会调用 `options.logger` 指定的全局方法 |
 | `include` | `{(String \| RegExp)[]}` |  `[/(jsx?\|tsx?)$/]`  | Specifies a list of patterns that match files to be included in compilation |
 | `exclude` | `{(String \| RegExp)[]}` |  `['node_modules']`  | Specifies a list of patterns that match files to be excluded from compilation |
+| `excludeNodeType` | `{AnyNode[]}` | `[]`   | Specifies a list of ast node types that to be excluded |
 
 ## Examples
 

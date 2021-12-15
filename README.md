@@ -61,6 +61,7 @@ module.exports = {
 | `timeLimit` | `{Number}` | `50`             | Threshold value for the execution time of slow functions.<br> If the execution time is greater than this value, the global method specified by `options.logger` will be called |
 | `include`   | `{(String \| RegExp)[]}` |  `[/(jsx?\|tsx?)$/]`  | Specifies a list of patterns that match files to be included in compilation |
 | `exclude`   | `{(String \| RegExp)[]}` |  `['node_modules']`  | Specifies a list of patterns that match files to be excluded from compilation |
+| `excludeNodeType` | `{AnyNode[]}` | `[]`   | Specifies a list of ast node types that to be excluded |
 
 ## Examples
 

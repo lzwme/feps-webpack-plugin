@@ -25,3 +25,6 @@ export const fibonacciArrowAsync = async n => {
   }
   return fibonacci(n - 2) + fibonacci(n - 1);
 };
+
+/** ArrowFunctionExpression, expression = true */
+export const testArrowFuncExpression = (a) => (a > 0 ? 1 : -1);
