@@ -7,7 +7,7 @@ export * from './objectExpression';
 export * from './ArrayExpression';
 export * from './LogicalExpression';
 
-const colors = ['red', 'green', 'blue'];
+const colors = ['gray', 'red', 'green', 'blue'];
 const desc = ['classTest', 'FUNC', 'funcIgnore'];
 const clsTest = new CalcTest();
 

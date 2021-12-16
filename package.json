@@ -39,6 +39,9 @@
     "url": "https://github.com/lzwme/feps-webpack-plugin/issues"
   },
   "homepage": "https://github.com/lzwme/feps-webpack-plugin#readme",
+  "peerDependencies": {
+    "chalk": "<5"
+  },
   "devDependencies": {
     "webpack": "^5.65.0"
   }
