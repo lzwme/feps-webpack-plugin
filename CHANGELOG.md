@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/lzwme/feps-webpack-plugin/compare/v1.1.0...v1.2.0) (2021-12-17)
+
+
+### Features
+
+* add paramter filepath for logger callback ([08f0992](https://github.com/lzwme/feps-webpack-plugin/commit/08f0992a0e5bd9470f8d6f7937ecaf6957652d5a))
+
 ## [1.1.0](https://github.com/lzwme/feps-webpack-plugin/compare/v1.0.1...v1.1.0) (2021-12-15)
 
 
