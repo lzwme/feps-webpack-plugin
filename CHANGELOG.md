@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/lzwme/feps-webpack-plugin/compare/v1.2.0...v1.3.0) (2022-05-19)
+
+
+### Features
+
+* add paramter minFnCodeLength for filter ([de4c5e1](https://github.com/lzwme/feps-webpack-plugin/commit/de4c5e1d8e3de4364d1819ccb21c3c1c114e0cd8))
+
 ## [1.2.0](https://github.com/lzwme/feps-webpack-plugin/compare/v1.1.0...v1.2.0) (2021-12-17)
 
 
