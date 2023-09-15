@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const argv = require('yargs').argv;
+const argv = require('minimist')(process.argv.slice(2));
 const webpack = require('webpack');
 const FEPSPlugin = require('../../lib');
 

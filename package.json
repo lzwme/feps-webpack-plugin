@@ -10,12 +10,12 @@
     "dev": "node examples/webpack5-example/webpack.config.js --run --watch",
     "version": "standard-version",
     "prepare-release": "npm run version",
-    "release": "npm run prepare-release && npm publish --access=public --registry=https://registry.npmjs.org && git push",
+    "release": "npm run prepare-release && npm publish --access=public --registry=https://registry.npmjs.com && git push",
     "test": "node examples/webpack5-example/webpack.config.js --run"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.com"
   },
   "repository": {
     "type": "git",
@@ -44,9 +44,10 @@
   },
   "homepage": "https://github.com/lzwme/feps-webpack-plugin#readme",
   "dependencies": {
-    "console-log-colors": "^0.2.3"
+    "console-log-colors": "^0.4.0"
   },
   "devDependencies": {
-    "webpack": "^5.65.0"
+    "minimist": "^1.2.8",
+    "webpack": "^5.88.2"
   }
 }
